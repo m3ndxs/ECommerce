@@ -1057,7 +1057,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.5"
         },
         "runtime": {
-          "ECommerce.Domain.dll": {}
+          "ECommerce.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "ECommerce.Infrastrucutre/1.0.0": {
@@ -1068,7 +1071,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.5"
         },
         "runtime": {
-          "ECommerce.Infrastrucutre.dll": {}
+          "ECommerce.Infrastrucutre.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

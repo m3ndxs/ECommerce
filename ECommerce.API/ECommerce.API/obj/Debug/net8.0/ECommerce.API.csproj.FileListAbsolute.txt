@@ -161,11 +161,6 @@ C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECom
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\bin\Debug\net8.0\ECommerce.Infrastrucutre.pdb
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets\msbuild.ECommerce.API.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets\msbuild.build.ECommerce.API.props
-C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ECommerce.API.props
-C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ECommerce.API.props
-C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\scopedcss\bundle\ECommerce.API.styles.css
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\ECommerc.203F780B.Up2Date
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\ECommerce.API.dll
@@ -174,3 +169,7 @@ C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECom
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\ECommerce.API.genruntimeconfig.cache
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\ref\ECommerce.API.dll
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\bin\Debug\net8.0\ECommerce.API.staticwebassets.endpoints.json
+C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
