@@ -1,7 +1,5 @@
 ﻿using ECommerce.Application.UseCases.Users;
 using ECommerce.Application.UseCases.Users.Inputs;
-using ECommerce.Domain.Models.Entities;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.API.Controllers

@@ -1,0 +1,68 @@
+﻿using Ecommerce.Infrastructure.Data;
+using ECommerce.Application.UseCases.Products.Inputs;
+
+namespace ECommerce.Application.UseCases.Products
+{
+    public class ProductUseCase : IProductUseCase
+    {
+        private readonly ApplicationDbContext _dbContext;
+
+        public ProductUseCase(ApplicationDbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+        public List<Domain.Models.Entities.Product> GetAll()
+        {
+            return _dbContext.Products.ToList();
+        }
+
+        public Domain.Models.Entities.Product GetId(int id)
+        {
+            return _dbContext.Products.Find(id);
+        }
+
+        public Domain.Models.Entities.Product PostProduct(AddProductInput input)
+        {
+            var productEntity = new Domain.Models.Entities.Product
+            { 
+                Name = input.Name,
+                Description = input.Description,
+                Price = input.Price,
+                CategoryId = input.CategoryId,
+                SellerId = input.SellerId
+            };
+
+            var result = _dbContext.Products.Add(productEntity);
+            _dbContext.SaveChanges();
+
+            return result.Entity;
+        }
+
+        public Domain.Models.Entities.Product PutProduct(int id, UpdateProductInput input)
+        {
+            var product = _dbContext.Products.Find(id);
+
+            product.Name = input.Name;
+            product.Description = input.Description;
+            product.Price = input.Price;
+            product.CategoryId = input.CategoryId;
+
+            _dbContext.SaveChanges();
+
+            return product;
+        }
+
+        public bool DeleteProduct(int id)
+        {
+            var product = _dbContext.Products.Find(id);
+            if (product != null) throw new Exception("Produto não encontrado");
+
+            _dbContext.Products.Remove(product);
+
+            var result = _dbContext.SaveChanges();
+
+            return result == 1;
+        }
+    }
+}

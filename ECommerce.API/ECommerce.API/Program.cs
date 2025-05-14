@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Ecommerce.Infrastructure.Data;
 using ECommerce.Application.UseCases.Users;
+using ECommerce.Application.UseCases.Products;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUserUseCase, UserUseCase>();
+builder.Services.AddScoped<IProductUseCase, ProductUseCase>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
