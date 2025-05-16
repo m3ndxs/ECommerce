@@ -15,6 +15,9 @@ namespace Ecommerce.Infrastructure.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Order>().Property(p => p.Status).HasConversion<string>();
+            modelBuilder.Entity<User>().Property(p => p.UserType).HasConversion<string>();
         }
     }
 }

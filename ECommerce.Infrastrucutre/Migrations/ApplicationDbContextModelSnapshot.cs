@@ -53,7 +53,7 @@ namespace ECommerce.Infrastrucutre.Migrations
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ProductId")
+                    b.Property<int>("ProductId")
                         .HasColumnType("int");
 
                     b.Property<decimal>("UnitPrice")
@@ -167,11 +167,15 @@ namespace ECommerce.Infrastrucutre.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ECommerce.Domain.Models.Entities.Product", null)
+                    b.HasOne("ECommerce.Domain.Models.Entities.Product", "Product")
                         .WithMany("ItemsOrdereds")
-                        .HasForeignKey("ProductId");
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Order");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("ECommerce.Domain.Models.Entities.Order", b =>

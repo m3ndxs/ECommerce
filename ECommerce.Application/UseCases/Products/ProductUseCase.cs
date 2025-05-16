@@ -24,6 +24,20 @@ namespace ECommerce.Application.UseCases.Products
 
         public Domain.Models.Entities.Product PostProduct(AddProductInput input)
         {
+            var category = _dbContext.Categories.Find(input.CategoryId);
+            if (category == null)
+                throw new Exception("Categoria não encontrada!");
+
+            var seller = _dbContext.Users.Find(input.SellerId);
+            if (seller == null)
+                throw new Exception("Vendedor não encontrado!");
+
+            if (seller.UserType != Domain.Enums.UserType.Seller)
+                throw new Exception("Apenas usuários do tipo 'Vendedor' podem cadastrar produtos.");
+
+            if (input.Price <= 0)
+                throw new Exception("O preço do produto deve ser maior que R$ 0,00");
+
             var productEntity = new Domain.Models.Entities.Product
             { 
                 Name = input.Name,

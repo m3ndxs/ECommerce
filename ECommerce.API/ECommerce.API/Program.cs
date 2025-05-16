@@ -3,6 +3,7 @@ using Ecommerce.Infrastructure.Data;
 using ECommerce.Application.UseCases.Users;
 using ECommerce.Application.UseCases.Products;
 using ECommerce.Application.UseCases.Categories;
+using ECommerce.Application.UseCases.Orders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserUseCase, UserUseCase>();
 builder.Services.AddScoped<IProductUseCase, ProductUseCase>();
 builder.Services.AddScoped<ICategoryUseCase, CategoryUseCase>();
+builder.Services.AddScoped<IOrderUseCase, OrderUseCase>();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
