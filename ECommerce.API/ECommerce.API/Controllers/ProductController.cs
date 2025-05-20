@@ -1,5 +1,6 @@
 ﻿using ECommerce.Application.UseCases.Products;
 using ECommerce.Application.UseCases.Products.Inputs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.API.Controllers
@@ -32,6 +33,7 @@ namespace ECommerce.API.Controllers
             return Ok(product);
         }
 
+        [Authorize(Roles = "Vendedor")]
         [HttpPost]
         public IActionResult PostProduct(AddProductInput input)
         {

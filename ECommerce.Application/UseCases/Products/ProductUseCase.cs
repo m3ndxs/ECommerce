@@ -32,7 +32,7 @@ namespace ECommerce.Application.UseCases.Products
             if (seller == null)
                 throw new Exception("Vendedor não encontrado!");
 
-            if (seller.UserType != Domain.Enums.UserType.Seller)
+            if (seller.UserType != Domain.Enums.UserType.Vendedor)
                 throw new Exception("Apenas usuários do tipo 'Vendedor' podem cadastrar produtos.");
 
             if (input.Price <= 0)

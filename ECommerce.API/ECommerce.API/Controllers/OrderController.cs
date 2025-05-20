@@ -1,7 +1,9 @@
 ﻿using ECommerce.Application.UseCases.Orders;
 using ECommerce.Application.UseCases.Orders.Inputs;
 using ECommerce.Domain.Enums;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace ECommerce.API.Controllers
 {
@@ -17,9 +19,27 @@ namespace ECommerce.API.Controllers
         }
 
         [HttpGet]
+        [Route("all")]
         public IActionResult GetAllOrders()
         {
             return Ok(_orderUseCase.GetAll());
+        }
+
+        [Authorize]
+        [HttpGet]
+        [Route("myorders")]
+        public IActionResult GetMyOrders()
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            
+            if (string.IsNullOrEmpty(userIdClaim))
+                return Unauthorized("Usuário não autenticado.");
+
+            int userId = int.Parse(userIdClaim);
+
+            var orders = _orderUseCase.GetByUserId(userId);
+
+            return Ok(orders);
         }
 
         [HttpGet]
@@ -33,12 +53,14 @@ namespace ECommerce.API.Controllers
             return Ok(order);
         }
 
+        [Authorize(Roles = "Cliente")]
         [HttpPost]
-        public IActionResult PostOrder(AddOrderInput input)
+        public IActionResult PostOrder([FromBody] AddOrderInput input)
         {
-            var order = _orderUseCase.PostOrder(input);
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);
+            var order = _orderUseCase.PostOrder(userId, input);
 
-            return CreatedAtAction(nameof(GetAllOrders), new { id = order.Id }, order);
+            return Ok(order);
         }
 
         [HttpPut]

@@ -1,19 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\leona\\OneDrive\\\u00C1rea de Trabalho\\Programa\u00E7\u00E3o\\Tutoriais\\ECommerce\\ECommerce.API\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{9A4D8FDD-B5F7-4CFB-9ABC-E70B51AD09E4}|ECommerce.API\\ECommerce.API.csproj|c:\\users\\leona\\onedrive\\\u00E1rea de trabalho\\programa\u00E7\u00E3o\\tutoriais\\ecommerce\\ecommerce.api\\ecommerce.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A4D8FDD-B5F7-4CFB-9ABC-E70B51AD09E4}|ECommerce.API\\ECommerce.API.csproj|solutionrelative:ecommerce.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A4D8FDD-B5F7-4CFB-9ABC-E70B51AD09E4}|ECommerce.API\\ECommerce.API.csproj|c:\\users\\leona\\onedrive\\\u00E1rea de trabalho\\programa\u00E7\u00E3o\\tutoriais\\ecommerce\\ecommerce.api\\ecommerce.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9A4D8FDD-B5F7-4CFB-9ABC-E70B51AD09E4}|ECommerce.API\\ECommerce.API.csproj|solutionrelative:ecommerce.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FD39D42D-DD0C-4359-B837-CE9CE21A5A9B}|..\\ECommerce.Application\\ECommerce.Application.csproj|c:\\users\\leona\\onedrive\\\u00E1rea de trabalho\\programa\u00E7\u00E3o\\tutoriais\\ecommerce\\ecommerce.application\\usecases\\orders\\orderusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -21,50 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\\u00C1rea de Trabalho\\Programa\u00E7\u00E3o\\Tutoriais\\ECommerce\\ECommerce.API\\ECommerce.API\\Program.cs",
-              "RelativeDocumentMoniker": "ECommerce.API\\Program.cs",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\\u00C1rea de Trabalho\\Programa\u00E7\u00E3o\\Tutoriais\\ECommerce\\ECommerce.API\\ECommerce.API\\Program.cs",
-              "RelativeToolTip": "ECommerce.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T16:24:45.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderUseCase.cs",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\\u00C1rea de Trabalho\\Programa\u00E7\u00E3o\\Tutoriais\\ECommerce\\ECommerce.Application\\UseCases\\Orders\\OrderUseCase.cs",
-              "RelativeDocumentMoniker": "..\\ECommerce.Application\\UseCases\\Orders\\OrderUseCase.cs",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\\u00C1rea de Trabalho\\Programa\u00E7\u00E3o\\Tutoriais\\ECommerce\\ECommerce.Application\\UseCases\\Orders\\OrderUseCase.cs",
-              "RelativeToolTip": "..\\ECommerce.Application\\UseCases\\Orders\\OrderUseCase.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T16:21:55.487Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "C:\\Users\\leona\\OneDrive\\\u00C1rea de Trabalho\\Programa\u00E7\u00E3o\\Tutoriais\\ECommerce\\ECommerce.API\\ECommerce.API\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "ECommerce.API\\Controllers\\OrderController.cs",
-              "ToolTip": "C:\\Users\\leona\\OneDrive\\\u00C1rea de Trabalho\\Programa\u00E7\u00E3o\\Tutoriais\\ECommerce\\ECommerce.API\\ECommerce.API\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "ECommerce.API\\Controllers\\OrderController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAwwDYAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T16:12:34.607Z",
-              "EditorCaption": ""
             }
           ]
         }

@@ -8,7 +8,7 @@ namespace ECommerce.Domain.Models.Entities
         public string Name { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public UserType UserType { get; set; } = UserType.Customer;
+        public UserType UserType { get; set; }
 
         public ICollection<Product> Products { get; set; }
         public ICollection<Order> Orders { get; set; }

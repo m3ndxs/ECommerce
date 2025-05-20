@@ -2,7 +2,7 @@
 {
     public enum UserType
     {
-        Customer = 1,
-        Seller = 2
+        Cliente = 1,
+        Vendedor = 2
     }
 }

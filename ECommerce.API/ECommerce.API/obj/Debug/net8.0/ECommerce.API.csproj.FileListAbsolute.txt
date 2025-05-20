@@ -173,3 +173,4 @@ C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECom
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets.build.json.cache
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\leona\OneDrive\Área de Trabalho\Programação\Tutoriais\ECommerce\ECommerce.API\ECommerce.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
